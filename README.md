@@ -1,5 +1,5 @@
 # Singapore-Ship-Detection
-MUSA 650 project with John Michael LaSalle and Madhura Gurav
+MUSA 650 final project for John Michael LaSalle, Madhura Gurav, and Eugene Chong.
 
 ## How to Push Changes to GitHub through Google Colab
 
