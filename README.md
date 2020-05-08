@@ -75,7 +75,7 @@ _Table 1. Manually identified ships._
 All operations except for manually creating the ship points were done in a Jupyter Notebook run in Google Colab, with data stored in a Google Drive directory. Our process is shown in the chart below:
 
 
-![alt_text](images/Process Flowchart.jpg "Flowchart showing process from data intake to model evaluation.")
+![alt_text](images/Process-Flowchart.jpg "Flowchart showing process from data intake to model evaluation.")
 
 
 _Figure 3. Process Flowchart._
