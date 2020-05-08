@@ -13,10 +13,6 @@ There are a growing number of satellite imagery providers, including private com
 We started with Shipsnet, a [publicly available dataset of labeled](https://www.kaggle.com/rhammell/ships-in-satellite-imagery) ship images captured with Planet [PlanetScope](https://www.planet.com/products/monitoring/) satellites created by Bob Hammell. We accessed Shipsnet using the [Kaggle API](https://github.com/Kaggle/kaggle-api). Shipsnet has 4,000 patches, comprising 1,000 ship patches and 3,000 non-ship or partial ship patches.
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Final-Report0.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/shipsnet-patches.jpg "Grid of square, medium resolution images showing either ships or land.")
 
 
@@ -25,10 +21,6 @@ _Figure 1. Shipsnet patches, ships above, not-ships below._
 Shipsnet consists of 3-channel (RGB) images with a ground-sampling-distance of approximately 3 meters, meaning each 80x80 patch covers 57,600 square meters. The data are stored in a JSON file consisting of a flattened vector of 19,200 pixel values for each image and each image’s label. All the images come from the Port of Long Beach or the San Francisco Bay.
 
 The data for our test set come from the European Space Agency’s Sentinel-2 program, which provides free access to 10-meter resolution imagery for the whole planet with frequent return intervals. Data is provided in 100 km by 100 km scenes with 13 bands. We chose Singapore for this project because it is covered by a single tile and is a major port with many ships.
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Final-Report1.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/sentinel-2-scene-thumbnail.jpg "Satellite image of Singapore with sparse fluffy white clouds.")
@@ -83,20 +75,12 @@ _Table 1. Manually identified ships._
 All operations except for manually creating the ship points were done in a Jupyter Notebook run in Google Colab, with data stored in a Google Drive directory. Our process is shown in the chart below:
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Final-Report2.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/Process Flowchart.jpg "Flowchart showing process from data intake to model evaluation.")
 
 
 _Figure 3. Process Flowchart._
 
 We resampled the Shipsnet patches to match the GSD of the Sentinel-2 imagery, creating patches of 32px by 32px. An exact conversion would have been a patch of 29.6px by 29.6px, but we chose 32 because it was the smallest size patch supported by the VGG16 model that we wanted to test for transfer learning.
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Final-Report3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/shipsnet-patches-resampled.png "Same grid of images from before, but very pixelated.")
