@@ -298,127 +298,149 @@ The baseline models trained on Sentinel-2 data had lower accuracy and specificit
 0.0862</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0230</p>
+
    </td>
   </tr>
   <tr>
-   <td>1. SVM (Sentinel-2)
+   <td>1. SVM (Baseline)
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.9075</p>
+
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.9076</p>
+
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.8000</p>
+
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0082</p>
+
    </td>
   </tr>
   <tr>
    <td>2. Shallow CNN (Shipsnet)
    </td>
    <td><p style="text-align: right">
-0.9959</p>
+0.9994</p>
 
    </td>
    <td><p style="text-align: right">
-0.9971</p>
+0.9994</p>
 
    </td>
    <td><p style="text-align: right">
-0.069</p>
+0.0517</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0938</p>
+
    </td>
   </tr>
   <tr>
-   <td>2. Shallow CNN (Sentinel-2)
+   <td>2. Shallow CNN (Baseline)
    </td>
    <td><p style="text-align: right">
-0.8723</p>
+0.9657</p>
 
    </td>
    <td><p style="text-align: right">
-0.8723</p>
+0.9658</p>
 
    </td>
    <td><p style="text-align: right">
-0.9333</p>
+0.8889</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0243</p>
+
    </td>
   </tr>
   <tr>
    <td>3. Deep CNN (Shipsnet)
    </td>
    <td><p style="text-align: right">
-0.9953</p>
+0.9964</p>
 
    </td>
    <td><p style="text-align: right">
-0.9963</p>
+0.9975</p>
 
    </td>
    <td><p style="text-align: right">
-0.2069</p>
+0.1379</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0635</p>
+
    </td>
   </tr>
   <tr>
-   <td>3. Deep CNN (Sentinel-2)
+   <td>3. Deep CNN (Baseline)
    </td>
    <td><p style="text-align: right">
-0.9826</p>
+0.9394</p>
 
    </td>
    <td><p style="text-align: right">
-0.9827</p>
+0.9394</p>
 
    </td>
    <td><p style="text-align: right">
-0.8222</p>
+0.9556</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0149</p>
+
    </td>
   </tr>
   <tr>
    <td>4. CNN with Transfer Learning (Shipsnet)
    </td>
    <td><p style="text-align: right">
-0.9397</p>
+0.8781</p>
 
    </td>
    <td><p style="text-align: right">
-0.9406</p>
+0.8788</p>
 
    </td>
    <td><p style="text-align: right">
-0.2241</p>
+0.2931</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.003</p>
+
    </td>
   </tr>
   <tr>
-   <td>4. CNN with Transfer Learning (Sentinel-2)
+   <td>4. CNN with Transfer Learning (Baseline)
    </td>
    <td><p style="text-align: right">
-0.8027</p>
+0.8562</p>
 
    </td>
    <td><p style="text-align: right">
-0.8031</p>
+0.8566</p>
 
    </td>
    <td><p style="text-align: right">
-0.4667</p>
+0.4222</p>
 
    </td>
-   <td>
+   <td><p style="text-align: right">
+0.0028</p>
+
    </td>
   </tr>
 </table>
