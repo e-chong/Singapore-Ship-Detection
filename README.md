@@ -257,9 +257,10 @@ Once we had created the models, we also trained an identical model on a balanced
 
 # Results
 
-Based on general experience with modeling approaches we would have expected SVM to perform the worst, followed by the shallow CNN, then deep CNN, with the CNN with transfer learning performing the best. This intuition did not hold true. While all the models had high accuracy due to the overwhelming prevalence of “not-ship” patches, the CNN with transfer learning performed th, this was a reflection of the overwhelming number of patches that are not ships.
+Based on general experience with modeling approaches we would have expected SVM to perform the worst, followed by the shallow CNN, then deep CNN, with the CNN with transfer learning performing the best. This intuition did not hold true, as we saw the CNN with transfer learning performed the worst. While all the models had high accuracy due to the overwhelming prevalence of “not-ship” patches, this was a reflection of the overwhelming number of patches that are not ships.
 
 The baseline models trained on Sentinel-2 data had lower accuracy and specificity than the Shipsnet trained models but much higher sensitivity. Specificity for all models was higher when trained with Sentinel-2 data, meaning that the model correctly classified ships as ships, but accuracy was lower because they also classified more “not-ships” as ships. The CNN with transfer learning had higher sensitivity with Shipsnet training data relative to the other models, but lower sensitivity when trained with Sentinel-2 data.
+
 
 
 <table>
